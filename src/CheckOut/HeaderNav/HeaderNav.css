@@ -1,0 +1,45 @@
+.headerMjr{
+    height: 150px;
+ 
+}
+.underMjr{
+    height: 150px;
+    width: 1050px;
+}
+.mainHeading{
+   
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+/* identical to box height */
+
+
+color: #00ACB4;
+}
+.mainPera{
+  
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+
+color: #00ACB4;
+
+}
+.mainWidth{
+    width: 700px;
+}
+
+.address{
+
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: #333333;
+}
+.addressMjr{
+    margin-left: 15px;
+}

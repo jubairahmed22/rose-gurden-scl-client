@@ -1,0 +1,65 @@
+.LibraryAllBackground {
+    position: relative;
+    background-image: url(https://i.ibb.co/Wgq3pwF/Rectangle-52.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.LibraryAllBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    border-radius: 12px;
+    /* Adjust the opacity as needed */
+}
+
+.ContactHeadingMainOne {
+    position: relative;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 35px;
+    color: white;
+    z-index: 1;
+}
+
+.boxLibrary {
+    width: 345px;
+    height: 60px;
+    background: rgba(25, 180, 188, 0.8);
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+}
+.textLibrary{
+    font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+/* identical to box height */
+color: #FFFFFF;
+
+}
+.ClassCetaName{
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 20px;
+letter-spacing: 0.04em;
+margin-left: 10px;
+color: #051244;
+}
+.welcome{
+    font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.04em;
+color: #051244;
+}

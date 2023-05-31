@@ -1,0 +1,11 @@
+.event-marker {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  .calenderMain{
+    width: 800px;
+    height: 400px;
+  }

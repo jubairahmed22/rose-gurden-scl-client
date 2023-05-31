@@ -1,0 +1,120 @@
+.ExaminationsAllBackground {
+    position: relative;
+    background-image: url(https://i.ibb.co/W55Vf9g/Rectangle-52-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.ExaminationsAllBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    border-radius: 12px;
+    /* Adjust the opacity as needed */
+}
+
+.BoxBackground {
+
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+}
+
+.boxTxtOne {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #00787E;
+
+}
+
+.imgTwo {
+    position: relative;
+    background-image: url(https://i.ibb.co/q1rmHPZ/Group-275-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.txtTittle {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 110%;
+    /* or 70px */
+
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+
+}
+
+.BoxPera {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+
+    color: #333333;
+
+}
+.routineTxt{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+
+    color: #00787E;
+}
+.noticeSubData{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+
+    color: #00787E;
+}
+.noticeSubDataTwo{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    background-color: #00787E;
+    color: white;
+    padding: 10px;
+}
+.noticeSubDataThree{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+
+    color: #00787E;
+}
+.noticeSubDataThree:hover{
+    color: rgb(10, 10, 65);
+    letter-spacing: 2px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+
+}
+.mainFormBorder{
+    background: #FFFFFF;
+    border: 2px solid #DADADA;
+    border-radius: 5px;
+}

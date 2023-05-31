@@ -1,0 +1,87 @@
+.contactAllBackground {
+    position: relative;
+    background-image: url(https://i.ibb.co/v3T0JCD/Rectangle-52-6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.contactAllBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    border-radius: 12px;
+    /* Adjust the opacity as needed */
+}
+
+.boxContact {
+    width: 300px;
+    height: 60px;
+
+    background: rgba(25, 180, 188, 0.8);
+}
+
+.contactBox {
+    height: 1024px;
+
+    border: 1px solid rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+}
+.contactTxt{
+    font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+/* identical to box height */
+
+
+color: #00ACB4;
+
+}
+.contactLine{
+    
+border: 1px solid rgba(153, 153, 153, 0.2);
+}
+.imgTwo{
+    background-image: url(https://i.ibb.co/w0pvhvB/Group-270.png);
+
+}
+.imgTxt{
+    font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 110%;
+/* or 70px */
+
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+}
+.imgTxtpera{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 110%;
+    /* or 70px */
+    
+    letter-spacing: 0.02em;
+    
+    color: #FFFFFF;
+}
+.Contactlocations{
+    font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 41px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+
+color: #00787E;
+}

@@ -1,0 +1,56 @@
+.GalleryAllBackground {
+    position: relative;
+    background-image: url(https://i.ibb.co/cK5v8X4/Rectangle-52-5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.GalleryAllBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    border-radius: 12px;
+    /* Adjust the opacity as needed */
+}
+
+.boxGallery {
+    width: 300px;
+    height: 60px;
+
+    background: rgba(25, 180, 188, 0.8);
+}
+
+.galleryBoxTwo{
+    height: 650px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+}
+.grpButtons{
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 0.04em;
+transition: color 0.3s ease;
+color: #00787E;
+}
+.grpButtons:hover{
+    color: rgb(94, 0, 181);
+}
+.sportsTxt{
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.04em;
+
+color: #333333;
+}

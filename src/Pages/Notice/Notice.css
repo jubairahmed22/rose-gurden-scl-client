@@ -1,0 +1,116 @@
+.NoticeAllBackground {
+    position: relative;
+    background-image: url(https://i.ibb.co/DbBr5Qc/Rectangle-52-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.NoticeAllBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    border-radius: 12px;
+    /* Adjust the opacity as needed */
+}
+
+.boxNotice {
+    width: 300px;
+    height: 60px;
+
+    background: rgba(25, 180, 188, 0.8);
+}
+
+.noticeBoxTwo {
+
+
+    border: 1px solid rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+}
+
+.noticeTxt {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #00787E;
+}
+
+.lineTwo {
+    height: 0px;
+    left: 170px;
+
+
+    border: 1px solid rgba(153, 153, 153, 0.2);
+}
+
+.tableHeading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #00787E;
+}
+
+.tableData {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #051244;
+}
+
+.applicationName {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+
+    color: #00787E;
+}
+
+.noticeBoard {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #00787E;
+
+}
+
+.applicationPera {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #00787E;
+}

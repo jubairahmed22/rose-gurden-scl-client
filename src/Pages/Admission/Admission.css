@@ -1,0 +1,89 @@
+.AdmissionAllBackground {
+    position: relative;
+    background-image: url(https://i.ibb.co/DbBr5Qc/Rectangle-52-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.AdmissionAllBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    border-radius: 12px;
+    /* Adjust the opacity as needed */
+}
+
+.boxTeacher {
+    width: 569px;
+    height: 60px;
+
+    background: rgba(25, 180, 188, 0.8);
+}
+
+.AdmissionLibrary {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.admissionTxt {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #00787E;
+}
+
+.admissionBox {
+
+  
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+}
+
+.line {
+    height: 0px;
+
+    margin-top: 10px;
+    border: 1px solid rgba(153, 153, 153, 0.2);
+}
+
+.admissionPera {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+
+    color: #333333;
+}
+.boxPhoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(153, 153, 153, 0.2);
+    width: 180px;
+    height: 200px;
+}
+.logoBox{
+    margin-left: 20%;
+}

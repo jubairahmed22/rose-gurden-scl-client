@@ -1,0 +1,65 @@
+.SupportAllBackground {
+    position: relative;
+    background-image: url(https://i.ibb.co/7jfr7Ty/Rectangle-52-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.SupportAllBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    border-radius: 12px;
+    /* Adjust the opacity as needed */
+}
+.supportBox{
+height: 937px;
+background: #FFFFFF;
+border: 1px solid #DADADA;
+border-radius: 5px;
+}
+.supportHeading{
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+
+color: #00787E;
+}
+.supportPera{
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.04em;
+
+color: #333333;
+}
+.supportBoxTwo{
+    width: 330px;
+height: 270px;
+background: #FFFFFF;
+border: 1px solid rgba(153, 153, 153, 0.2);
+border-radius: 3px;
+}
+.boxTwoTxt{
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+
+color: #67908F;
+}

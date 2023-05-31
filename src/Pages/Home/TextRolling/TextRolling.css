@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    white-space: nowrap;
+   
+  }
+  
+  .list {
+    display: flex;
+    font-size: 5vw;
+    -webkit-animation: loop 80s infinite linear;
+    animation: loop 80s infinite linear;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .item {
+    font-size: 20px;
+    color: black
+    }
+  
+  @keyframes loop {
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }

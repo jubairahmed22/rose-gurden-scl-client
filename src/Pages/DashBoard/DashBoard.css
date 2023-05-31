@@ -1,0 +1,17 @@
+.buttons {
+    background: #00787E;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, letter-spacing 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.buttons:hover {
+    background-color: rgb(10, 10, 65);
+    letter-spacing: 2px;
+}

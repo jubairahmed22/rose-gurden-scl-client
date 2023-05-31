@@ -1,0 +1,13 @@
+.navBack{
+    background-color: #19B4BC;
+    z-index: 999;
+}
+.menu{
+    color: white;
+ 
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+z-index: 999;
+}

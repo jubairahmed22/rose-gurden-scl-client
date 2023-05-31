@@ -1,0 +1,56 @@
+.aboutAllBackground {
+    position: relative;
+    background-image: url(https://i.ibb.co/fNGnrQD/Rectangle-52-7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.aboutAllBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    border-radius: 12px;
+    /* Adjust the opacity as needed */
+}
+
+.boxAbout {
+    width: 300px;
+    height: 60px;
+
+    background: rgba(25, 180, 188, 0.8);
+}
+
+.boxAboutTwo {
+    height: 1218px;
+
+
+    border: 1px solid rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+}
+
+.aboutTxt {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    /* identical to box height */
+
+
+    color: #00ACB4;
+}
+.aboutPera{
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.04em;
+
+color: #333333;
+}

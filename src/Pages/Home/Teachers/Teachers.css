@@ -1,0 +1,97 @@
+.TeachersAllBackground {
+    position: relative;
+    background-image: url(https://i.ibb.co/Fg2H2zj/Rectangle-52-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.TeachersAllBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    border-radius: 12px;
+    /* Adjust the opacity as needed */
+}
+.teachersBox{
+
+height: 1879px;
+
+background: #FFFFFF;
+border: 1px solid #DADADA;
+border-radius: 5px;
+}
+.teacherTxt{
+    font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 41px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+
+color: #00787E;
+}
+.teacherPera{
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.04em;
+
+color: #333333;
+}
+
+.mainTeacher{
+
+height: 160px;
+left: 162px;
+top: 941px;
+
+background: #FFFFFF;
+border: 1px solid #00ACB4;
+border-radius: 5px;
+}
+.techBox{
+    display: flex;
+  
+    justify-content: center;
+    flex-direction: column;
+}
+.teacherName{
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 0.04em;
+
+color: #333333;
+}
+.teacherSubName{
+    font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+
+color: #19B4BC;
+}
+.teacherEmail{
+    font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+
+color: #666666;
+}
