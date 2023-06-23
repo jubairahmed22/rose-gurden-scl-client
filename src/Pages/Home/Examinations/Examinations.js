@@ -70,7 +70,7 @@ const Examinations = () => {
     useEffect(() => {
         const fetchNotices = async () => {
             try {
-                const response = await fetch('http://localhost:8000/addRoutine');
+                const response = await fetch('https://rose-gurrden-server-bnexttechitc-gmailcom.vercel.app/addRoutine');
                 const data = await response.json();
                 setNotices(data);
             } catch (error) {

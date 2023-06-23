@@ -1,0 +1,35 @@
+.idBackGround{
+    background-color: #19B4BC;
+}
+.mainMjr{
+    display: flex;
+  
+    justify-content: center;
+    background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 41.15%);
+}
+.cardMain{
+    background-color: white;
+}
+
+.ribon {
+    width: 50px;
+    background-color: red;
+    position: relative;
+    padding-top: 300px;
+    margin-top: -300px;
+}
+
+.ribon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(90deg, #6f3ee0 0%, #7751f7 41.15%);
+
+}
+.ltlBox{
+    background: linear-gradient(90deg, #6DD5ED 0%, #6DD5ED 41.15%);
+
+}

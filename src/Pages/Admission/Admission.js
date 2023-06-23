@@ -2,15 +2,24 @@ import React from 'react';
 import './Admission.css'
 import Footer from '../Shared/Footer';
 import { useForm } from 'react-hook-form';
+import { useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthProvider';
+import { Link, useNavigate } from 'react-router-dom';
+import { useRef } from 'react';
 
 const Admission = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
     const imageHostKey = "4ec96bac20d60fff02cfb0ebf74274d3";
     console.log(imageHostKey);
-
+    const { user } = useContext(AuthContext);
+    const email = user.email
+    
+    console.log(email);
+    const formRef = useRef(null);
+    const navigate = useNavigate()
     const handleAddProduct = data => {
-
+        
         // event.preventDefault();
         // const form = event.target;
 
@@ -30,16 +39,19 @@ const Admission = () => {
             .then(imgData => {
                 if (imgData.success) {
                     console.log(imgData.data.url);
+                    // const randomstring = require('randomstring');
                     const seller = {
 
+                        id:  Math.floor(Math.random() * 100000000).toString(),
                         firstName: data.FirstName,
                         LastName: data.LastName,
                         price: data.price,
                         fathersName: data.FathersName,
                         mothersName: data.MothersName,
                         phone: data.Phone,
-                        email: data.Email,
+                        email: data.email,
                         address: data.Address,
+                        NewDate: new Date().toLocaleDateString(),
                         description: data.description,
                         admission: data.AdmissionClass,
                         img: imgData.data.url
@@ -47,7 +59,7 @@ const Admission = () => {
                     }
                     console.log(seller);
 
-                    fetch('http://localhost:8000/admissions', {
+                    fetch('https://rose-gurrden-server-bnexttechitc-gmailcom.vercel.app/admissions', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'
@@ -56,11 +68,12 @@ const Admission = () => {
                     })
                         .then(res => res.json())
                         .then(data => {
-                            console.log(data);
+                            
                             if (data.acknowledged) {
                                 alert('Admission Complete Successfully')
 
-
+                                formRef.current.reset();
+                                navigate(`/admissionDataPrint`)
 
                             }
 
@@ -81,14 +94,14 @@ const Admission = () => {
 
     }
 
-   const handlePrint = () => {
-        const printContents = document.getElementById('admissionForm').innerHTML;
-        const originalContents = document.body.innerHTML;
-        document.body.innerHTML = printContents;
-        window.print();
-        document.body.innerHTML = originalContents;
-      };
-
+//    const handlePrint = () => {
+//         const printContents = document.getElementById('admissionForm').innerHTML;
+//         const originalContents = document.body.innerHTML;
+//         document.body.innerHTML = printContents;
+//         window.print();
+//         document.body.innerHTML = originalContents;
+//       };
+     
     return (
         <div>
             <div  className='AdmissionAllBackground'>
@@ -117,30 +130,22 @@ const Admission = () => {
                 <div>
                     <div id="admissionForm" className='m-5 p-5 border-2'>
 
-                        <div  className=''>
-                            <div className=' inline-flex items-center mainWidth'>
-                                <img className='' src='https://i.ibb.co/gymTzzj/rose-new-png-1.png' alt=''></img>
-                                <div className='ml-5'>
-                                    <h1 className='mainHeading'>Rose Garden Preparatory School</h1>
-                                    <p className='mainPera'>Semi English Medium School</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='grid grid-cols-3'>
-                            <div className='w-full col-span-2 p-7'>
-                                <form onSubmit={handleSubmit(handleAddProduct)}>
+    
+                        <div className=''>
+                            <div className='w-full p-7 px-32'>
+                                <form ref={formRef} onSubmit={handleSubmit(handleAddProduct)}>
 
 
                                     <div className="form-control w-full ">
-                                        <label className="label"> <span className="label-text">First Name</span> </label>
+                                        <label className="label"> <span className="label-text admissionPera">First Name</span> </label>
                                         <input type="model name"  {...register("FirstName", {
                                             required: "Name is Required"
-                                        })} placeholder="Type here" className="input input-bordered w-full" />
+                                        })} placeholder="Type here" className="input input-bordered  w-full" />
                                         {errors.email && <p className='text-red-500'>{errors.name.message}</p>}
 
                                     </div>
                                     <div className="form-control  w-full ">
-                                        <label className="label"> <span className="label-text">Last Name</span> </label>
+                                        <label className="label"> <span className="label-text admissionPera">Last Name</span> </label>
                                         <input type="model name"  {...register("LastName", {
                                             required: "Name is Required"
                                         })} placeholder="Type here" className="input input-bordered w-full " />
@@ -149,7 +154,7 @@ const Admission = () => {
                                     </div>
 
                                     <div className="form-control w-full ">
-                                        <label className="label"> <span className="label-text">Age</span> </label>
+                                        <label className="label"> <span className="label-text admissionPera">Age</span> </label>
                                         <input type="price"  {...register("Age", {
                                             required: "Name is Required"
                                         })} placeholder="Type here" className="input input-bordered w-full " />
@@ -157,7 +162,7 @@ const Admission = () => {
 
                                     </div>
                                     <div className="form-control w-full ">
-                                        <label className="label"> <span className="label-text">Fathers Name</span> </label>
+                                        <label className="label"> <span className="label-text admissionPera">Fathers Name</span> </label>
                                         <input type="Year"  {...register("FathersName", {
                                             required: "Name is Required"
                                         })} placeholder="Type here" className="input input-bordered w-full " />
@@ -165,7 +170,7 @@ const Admission = () => {
 
                                     </div>
                                     <div className="form-control w-full ">
-                                        <label className="label"> <span className="label-text">Mothers Name</span> </label>
+                                        <label className="label"> <span className="label-text admissionPera">Mothers Name</span> </label>
                                         <input type="Publisher"  {...register("MothersName", {
                                             required: "Name is Required"
                                         })} placeholder="Type here" className="input input-bordered w-full " />
@@ -174,34 +179,50 @@ const Admission = () => {
                                     </div>
 
                                     <div className="form-control w-full ">
-                                        <label className="label"> <span className="label-text">Phone Numbers</span> </label>
+                                        <label className="label"> <span className="label-text admissionPera">Phone Numbers</span> </label>
                                         <input type="id"  {...register("Phone", {
                                             required: "Name is Required"
                                         })} placeholder="Type here" className="input input-bordered w-full " />
                                         {errors.name && <p className='text-red-500'>{errors.name.message}</p>}
 
                                     </div>
-                                    <div className=" form-control w-full ">
-                                        <label className="label"> <span className="label-text">Email</span> </label>
-                                        <input type="email"  {...register("Email", {
-                                            required: "Name is Required"
-                                        })} placeholder="Type here" className="input input-bordered w-full " />
-                                        {errors.name && <p className='text-red-500'>{errors.name.message}</p>}
-
-                                    </div>
+                                
 
                                     <div className="form-control w-full ">
-                                        <label className="label"> <span className="label-text">Address</span> </label>
+                                        <label className="label"> <span className="label-text admissionPera">Address</span> </label>
                                         <input type="description"  {...register("Address", {
                                             required: "Name is Required"
                                         })} placeholder="Type here" className="input input-bordered w-full " />
                                         {errors.name && <p className='text-red-500'>{errors.name.message}</p>}
 
                                     </div>
+
+                                    <div className="form-control w-full">
+                                    <label className="label">
+                                        <span className="label-text admissionPera">Class in which admission is sought</span>
+                                    </label>
+                                    <select {...register("AdmissionClass", {
+                                        required: "class is Required"
+                                    })} className="select select-bordered w-full">
+                                        <option value="">Select Class Name</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        {/* Add more options as needed */}
+                                    </select>
+                                    {errors.subject && <p className='text-red-500'>{errors.subject.message}</p>}
+                                </div>
                                     <div className="form-control w-full ">
-                                        <label className="label"> <span className="label-text">Class in which admission is sought</span> </label>
-                                        <input type="description"  {...register("AdmissionClass", {
-                                            required: "Name is Required"
+                                        <label className="label"> <span className="label-text admissionPera">Email</span> </label>
+                                        <input type="description"  {...register("email", {
+                                            required: "email is Required"
                                         })} placeholder="Type here" className="input input-bordered w-full " />
                                         {errors.name && <p className='text-red-500'>{errors.name.message}</p>}
 
@@ -212,20 +233,20 @@ const Admission = () => {
                                             <h2>Upload Photo</h2>
                                             <input type="file" {...register("img", {
                                                 required: "file is Required"
-                                            })} className="file-input file-input-bordered file-input-primary mt-5 w-full " />
+                                            })} className="file-input file-input-bordered buttons mt-5 w-full " />
                                             {errors.img && <p className='text-red-500'>{errors.img.message}</p>}
                                         </div>
                                     </div>
-                                    <button className='print:hidden btn btn-primary w-full mt-5' onClick={handlePrint}>Print</button>
-
-                                    <input className='print:hidden btn btn-primary w-full mt-5'  value='Submit' type="submit" />
+                                    {/* <button className='print:hidden btn btn-primary w-full mt-5' onClick={handlePrint}>Print</button> */}
+                                    {/* <Link to='/admissionDataPrint'><button className='btn btn-primary mt-5 w-full'>View and print</button></Link> */}
+                                    <input className='print:hidden btn buttons w-full mt-5'  value='Submit' type="submit" />
                                 </form>
                             </div>
-                            <div className='w-full mt-20 h-56  '>
+                            {/* <div className='w-full mt-20 h-56  '>
                                 <div className='bg-gray-200 boxPhoto'>
                                     <h1>Your Photo</h1>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

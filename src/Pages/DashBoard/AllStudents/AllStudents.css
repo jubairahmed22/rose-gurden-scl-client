@@ -1,0 +1,16 @@
+.studentImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainSize{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxTwo{
+    width: 650px;
+}
+.backGroundCol{
+    background-color: #417681;
+}

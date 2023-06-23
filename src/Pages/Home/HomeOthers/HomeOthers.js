@@ -78,7 +78,7 @@ const HomeOthers = () => {
 
                             </div>
                             <div>
-                                <button className='welcomeButton mt-2'>Apply Now</button>
+                              <Link to="/admission"><button className='welcomeButton mt-2'>Apply Now</button></Link>
 
                             </div>
                         </div>
@@ -136,7 +136,7 @@ const HomeOthers = () => {
                     <div className=''>
                         {
                             news.map(not =>
-                                <Link><h1 className='noticeName pt-7'>{not.name}</h1>
+                                <Link  to={`/blogDetails/${not.id}`}><h1 className='noticeName pt-7'>{not.name}</h1>
                                 </Link>
                             )
                         }

@@ -1,26 +1,38 @@
 [
     {
         "id": "1",
-        "name": "Grandparents Day Celebration"
+        "name": "Grandparents Day Celebration",
+        "description": "The air is filled with warmth and love as we gather to celebrate Grandparents Day.",
+        "img": "https://i.ibb.co/dBcFn2W/african-american-couple-celebrating-anniversary-together-with-flowers.jpg"
     },
     {
         "id": "2",
-        "name": "Annual Day Function"
+        "name": "Annual Day Function",
+        "description": "The much-awaited Annual Day Function sets the stage for an evening filled with excitement and grandeur.",
+        "img": "https://i.ibb.co/7rv8H3P/birthday-table-with-rainbow-balloons-summer-holiday-park.jpg"
     },
     {
         "id": "3",
-        "name": "Field Trip to the Local Zoo"
+        "name": "Field Trip to the Local Zoo",
+        "description": "Excitement fills the air as students embark on a fascinating field trip to the local zoo.",
+        "img": "https://i.ibb.co/1rgLNsC/father-son-watching-feeding-giraffe-zoo-happy-kid-having-fun-with-animals-safari-park-warm-summer-da.jpg"
     },
     {
         "id": "4",
-        "name": "Festival Celebrations at Play Group School"
+        "name": "Festival Celebrations at Play Group School",
+        "description": "The playgroup school buzzes with excitement as the little ones prepare for a day of festive celebrations.",
+        "img": "https://i.ibb.co/9pNx1Xx/football-field-cabin-are-park.jpg"
     },
     {
         "id": "5",
-        "name": "Field Trip to the Local Zoo"
+        "name": "Field Trip to the Local Zoo",
+        "description": "Excitement fills the air as students eagerly gather for a memorable field trip to the local zoo.",
+        "img": "https://i.ibb.co/Vmr5HvS/playground-children.jpg"
     },
     {
         "id": "6",
-        "name": "Science Fair for Play Group Students"
+        "name": "Science Fair for Play Group Students",
+        "description": "The playgroup school buzzes with anticipation as the young students prepare for an enchanting Science Fair.",
+        "img": "https://i.ibb.co/jvJ14WX/children-scientists-schoolchildren-laboratory-conduct-experiments-boy-girl-experiments-with-microsco.jpg"
     }
 ]

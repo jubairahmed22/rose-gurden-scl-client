@@ -63,3 +63,13 @@ line-height: 25px;
 letter-spacing: 0.04em;
 color: #051244;
 }
+.DetailsCard{
+    background: rgba(25, 180, 188, 0.8);
+    width: 300px;
+    border-radius: 5px;
+}
+.detailsCardTxt {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+}

@@ -37,7 +37,7 @@ const Notice = () => {
     const [notice, setnotice] = useState([]);
     useEffect(() => {
 
-        const url = 'notice.json';
+        const url = 'https://rose-gurrden-server-bnexttechitc-gmailcom.vercel.app/noticeDetails';
 
 
         fetch(url)
@@ -48,6 +48,8 @@ const Notice = () => {
             })
     }, [])
     const [news, setnews] = useState([]);
+
+    
     useEffect(() => {
 
         const url = 'news.json';

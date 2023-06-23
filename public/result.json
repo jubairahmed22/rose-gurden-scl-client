@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "name": "math",
+        "marks": "95"
+    },
+    {
+        "id": "2",
+        "name": "physics",
+        "marks": "65"
+    },
+    {
+        "id": "3",
+        "name": "biology",
+        "marks": "45"
+    },
+    {
+        "id": "4",
+        "name": "english",
+        "marks": "80"
+    }
+]

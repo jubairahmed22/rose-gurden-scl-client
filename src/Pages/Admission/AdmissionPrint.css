@@ -1,0 +1,54 @@
+.admissionPrintBox{
+ 
+    border: 2px solid rgba(153, 153, 153, 0.2);
+   
+}
+.PrintMainHeading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+
+    color: #00787E;   
+}
+.boxDetails{
+  
+    display: flex;
+   
+    justify-content: center;
+}
+.boxDetailsMain{
+    width: 620px;
+    
+}
+.PrintBoxThree{
+    border: 2px solid rgba(153, 153, 153, 0.2);
+}
+.studentsData{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 44px;
+
+    color: #00787E;   
+}
+.studentsDataHeading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+
+    color: #00787E; 
+}
+.imgMjrPrint{
+    width: 200px;
+    height: 200px;
+}
+.PrintMainHeadingTwo{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 44px;
+
+    color: #00787E;  
+}

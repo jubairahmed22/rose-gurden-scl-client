@@ -7,31 +7,40 @@ import Footer from '../../Shared/Footer';
 
 
 const onlineClass = [
-    {
+    {   
+        id: "1",
         name: "Class - I"
     },
     {
+        id: "2",
         name: "Class - II"
     },
     {
+        id: "3",
         name: "Class - III"
     },
     {
+        id: "4",
         name: "Class - V"
     },
     {
+        id: "5",
         name: "Class - VI"
     },
     {
+        id: "6",
         name: "Class - VII"
     },
     {
+        id: "7",
         name: "Class - VIII"
     },
     {
+        id: "8",
         name: "Class - IX"
     },
     {
+        id: "9",
         name: "Class - X"
     },
 ]
@@ -106,7 +115,7 @@ const Library = () => {
                             <div className=''>
                                 {
                                     onlineClass.slice(startIndex, endIndex).map(not =>
-                                        <Link>
+                                        <Link to={`/libraryDetails/${not.id}`}>
                                             <h1 className='ClassCetaName pt-10'>{not.name}</h1>
                                         </Link>
                                     )

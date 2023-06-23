@@ -1,0 +1,33 @@
+.mainMjr{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainMjrTwo{
+    width: 600px;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 5px;
+ 
+    display: flex;
+
+    justify-content: center;
+}
+.mainImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dataText{
+    color: #00787E;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.dataTextTwo{
+    color: #00787E;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
